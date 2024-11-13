@@ -1,1 +1,1 @@
-## 🚀 Elaborando exercicios, Sozinho e com ajuda do ChatGPT
+## 🚀 Elaborando exercicios em python, Sozinho e com ajuda do ChatGPT
