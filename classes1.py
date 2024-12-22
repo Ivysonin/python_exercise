@@ -1,27 +1,32 @@
-class Notas():
-    def __init__(self, nome):
+class Aluno:
+    def __init__(self,nome):
         self.nome = nome
-        self.at1 = 0 
-        self.at2 = 0
+        self.notas = []
+        self.media = 0
 
-    def atividade(self, at):
-        self.at1 = at
+    def adicionar_nota(self,nota):
+        self.notas.append(nota)
 
-    def prova(self, at2):
-        self.at2 = at2
+    def calcular_media(self):
+        # Variavel 'nota = 0' sendo usada para somar os valores que estão na list
+        nota = 0
+        for i in self.notas:
+            nota += i
+            self.media = nota / 2 # dividindo apenas por 2, pq eu só estou atribuindo 2 notas.
+        return self.media
 
-    def media(self):
-        if (self.at1 + self.at2) / 2 >= 8:
-            print(self.nome, "Nota: A")
-        elif (self.at1 + self.at2) / 2 <= 6 and (self.at1 + self.at2) / 2 > 0 :
-            print (self.nome, "Nota: B")
-    
-aluno_1 = Notas('Ivyson')
-aluno_1.atividade(10)
-aluno_1.prova(2)
-aluno_1.media()
+    def exibir_dados(self):
+        print(f"Nome: {self.nome}\nMédia: {self.media}")
 
-aluno_2 = Notas('Ana')
-aluno_2.atividade(10)
-aluno_2.prova(10)
-aluno_2.media()
+# Criando alunos
+aluno1 = Aluno('Iyvson')
+
+# Adicinando notas
+aluno1.adicionar_nota(5)
+aluno1.adicionar_nota(10)
+
+# calculando media
+aluno1.calcular_media()
+
+# Exibindo
+aluno1.exibir_dados()
