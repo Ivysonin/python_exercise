@@ -1,5 +1,3 @@
-# Crie um objeto da classe Retangulo, defina os valores e mostre a área e o perímetro.
-
 class Retangulo:
     def __init__(self, largura, altura):
         self.largura = largura
