@@ -18,7 +18,7 @@ for i in range(qnt_serie_filme) :
     avaliar = input ("=== Para avaliar, G: para gostei, NG: para não gostei, A: para amei: ").upper() # 'upper' está transformando a resposta do usuario em maiúscula
     avaliacao.update({filme_serie : avaliar})
 
-print ("") # organização
+print ('') # organização
 
 contador = 1
 for chave,valor in avaliacao.items() :
