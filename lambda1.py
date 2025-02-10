@@ -1,6 +1,6 @@
 # Lambda Function
     # É uma função (pequena) sem nome
-    # Pode ter vários argumentos mas somente 1 expressãao
+    # Pode ter vários argumentos mas somente 1 expressão
     # Código mais 'clean'
 
 soma = lambda x,y: x + y
