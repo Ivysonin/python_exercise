@@ -14,11 +14,17 @@ class Animal:
 class Cachorro(Animal):
     def latir(self):
         print('au au')
+    
+    def buscar_bola(self):
+        print(f'{self.nome} está buscando a bola')
 
 
 class Gato(Animal):
     def miar(self):
         print('miau miau')
+
+    def arranhar(self):
+        print(f'{self.nome} está arranhando o sofá')
 
 
 class Passaro(Animal):
@@ -31,6 +37,7 @@ class Passaro(Animal):
 
 cachorrinho = Cachorro('cachorrinho')
 cachorrinho.latir()
+cachorrinho.buscar_bola()
 cachorrinho.comer()
 cachorrinho.dormir()
 
@@ -38,6 +45,7 @@ print('') # Pulando linha para melhor visualização
 
 gatinho = Gato('gatinho')
 gatinho.miar()
+gatinho.arranhar()
 gatinho.comer()
 gatinho.dormir()
 
