@@ -1,4 +1,4 @@
-# Classe mãe: Todos os animais podem comer e dormir
+# Classe mãe: Todos os animais podem herdar esses atributos
 class Animal:
     def __init__(self, nome):
         self.nome = nome
@@ -10,24 +10,38 @@ class Animal:
         print(f'{self.nome} está dormindo')
 
 
-# Classe filha: Apenas o cachorro pode latir
+# Classes filhas
 class Cachorro(Animal):
     def latir(self):
         print('au au')
-# Classe filha: Apenas o gato pode miar
+
+
 class Gato(Animal):
     def miar(self):
         print('miau miau')
 
 
-cachorrinho = Cachorro('bob')
+class Passaro(Animal):
+    def cantar(self):
+        print(f'{self.nome} está cantando')
+
+
+
+# Testando os atributos
+
+cachorrinho = Cachorro('cachorrinho')
 cachorrinho.latir()
 cachorrinho.comer()
 cachorrinho.dormir()
 
-print('')
+print('') # Pulando linha para melhor visualização 
 
-gatinho = Gato('lilo')
+gatinho = Gato('gatinho')
 gatinho.miar()
 gatinho.comer()
 gatinho.dormir()
+
+print('') # Pulando linha para melhor visualização 
+
+passarinho = Passaro('passarinho')
+passarinho.cantar()
