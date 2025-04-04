@@ -32,6 +32,12 @@ class Passaro(Animal):
         print(f'{self.nome} está cantando')
 
 
+class Cavalo(Animal):
+    def galopar(self):
+        print(f'{self.nome} está galopando')
+
+
+print('') # Pulando linha para melhor visualização 
 
 # Testando os atributos
 
@@ -53,3 +59,10 @@ print('') # Pulando linha para melhor visualização
 
 passarinho = Passaro('passarinho')
 passarinho.cantar()
+
+print('') # Pulando linha para melhor visualização 
+
+cavalinho = Cavalo('cavalinho')
+cavalinho.galopar()
+cavalinho.comer()
+cavalinho.dormir()
